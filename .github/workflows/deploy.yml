@@ -22,10 +22,10 @@ jobs:
           node-version: 18
  
       - name: Install dependencies
-        run: npm install
+        run: npm run build
  
       - name: Build React app
-        run: npm run build
+        run: npm run dev
  
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
